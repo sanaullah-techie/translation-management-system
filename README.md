@@ -12,19 +12,19 @@ The *Translation Service* is a Spring Boot-based microservice that provides tran
 
 ---
 
-## 🔧 *Tech Stack*
-- *Java 21*
-- *Spring Boot 3.4.3*
-- *Spring Security (JWT)*
-- *Spring Data JPA*
-- *H2 Database (for Development)*
-- *Maven*
-- *Docker*
+**Tech Stack**
+**Java 21**
+**Spring Boot 3.4.3**
+**Spring Security (JWT)**
+**Spring Data JPA**
+**H2 Database (for Development)**
+**Maven**
+**Docker**
 
 ---
 
 ## 🏗 *Project Setup*
 ### ⿡ Clone Repository
 ```bash
-git clone https://github.com/your-repository/translation-service.git
+git clone https://github.com/sanaullah-techie/translation-management-system.git
 cd translation-service
