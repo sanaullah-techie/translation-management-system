@@ -25,6 +25,15 @@ The *Translation Service* is a Spring Boot-based microservice that provides tran
 
 ## 🏗 *Project Setup*
 ### ⿡ Clone Repository
-```bash
+#bash
 git clone https://github.com/sanaullah-techie/translation-management-system.git
-cd translation-service
+cd translation-management-system
+### *Build Docker Image*
+docker build -t tms-image .
+### *Run the Docker Container*
+docker run -p 8080:8080 -d --name tms-container tms-image
+
+### Access Swagger UI
+Visit http://localhost:8080/swagger-ui/index.html
+
+
