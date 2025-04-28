@@ -18,7 +18,7 @@ public class Translation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "translation_key")
     private String key;
 
     @Column(nullable = false)
