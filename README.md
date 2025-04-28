@@ -34,7 +34,28 @@ docker build -t tms-image .
 
 docker run -p 8080:8080 -d --name tms-container tms-image
 ---
-### *Access Swagger UI*
-Visit http://localhost:8080/swagger-ui/index.html
+### *Accessing the Application Locally*
+Visit: http://localhost:8080/swagger-ui/index.html
+
+Since the endpoints are protected by JWT authentication, users must first register and obtain a token to access protected APIs.
+
+## *Steps to use the Swagger UI*
+
+1 Open the Swagger UI in your browser.
+2 Register a new user by providing a username and password via the /api/auth/register endpoint.
+ After registration, you will receive a JWT token in the response.
+3 Click on the "Authorize" button in Swagger UI and paste the received token.
+4 Once authorized, you can access the protected endpoints, such as:
+  Create a new translation
+  Search for translations
+
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/f34bc239-7554-485e-8f39-8decef7516c3" />
+
+![image](https://github.com/user-attachments/assets/73cf4271-1e3a-4bb2-b5cf-c0f84d14f3ec)
+
+![image](https://github.com/user-attachments/assets/691a7afc-7168-4c81-bdbb-6765563cabe4)
+
+
+
 
 
